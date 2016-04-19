@@ -66,7 +66,7 @@ class StatusTask extends AsyncTask<String, Void, String> {
         String addr = server.split(":")[0];
         String port = server.split(":")[1];
         Socket clientSocket = null;
-        strOut += String.format("connecting to %s:%s...\n", addr, port);
+        //strOut += String.format("connecting to %s:%s...\n", addr, port);
         try {
             clientSocket = new Socket(addr, Integer.valueOf(port)); //connect to server
         } catch (IOException ioe) {
